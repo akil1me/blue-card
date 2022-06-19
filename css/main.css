@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url('../fonts/roboto-v30-latin-300.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-300.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('../fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  background-color: #EAEDF3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 730px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+
+.bg-img {
+  width: 700px;
+  height: 200px;
+  background-image: url("../img/blue-card-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px 10px #979797;
+}
+
+.title-site {
+  background-color: #fff;
+  padding: 38px 33px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+}
+
+.blue-card-title {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.645);
+
+
+}
+
+.blue-card-title-span {
+  color: #5060C0;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 38px 33px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+}
+
+.user-label {
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.645);
+}
+
+.user-label span {
+  color: red;
+}
+
+.user-name {
+  padding: 15px 15px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(128, 128, 128, 0.447);
+  outline: none;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.user-data {
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.447);
+  outline: none;
+  width: 300px;
+}
+
+.user-tel {
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.447);
+  outline: none;
+  width: 300px;
+}
+
+.user-from {
+  display: inline-block;
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.447);
+  width: 300px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.user-education {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.645);
+
+}
+
+.user-education input {
+  margin-right: 5px;
+}
+
+.user-text {
+  resize: vertical;
+  display: inline-block;
+  padding: 15px 15px;
+  border-radius: 5px;
+  border: 2px solid rgba(128, 128, 128, 0.447);
+  width: 300px;
+
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.submit {
+  font-weight: 700;
+  color: #5060C0;
+  padding: 10px 25px;
+  border: 2px solid #5060C0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.submit:hover {
+  color: white;
+  background-color: #5060C0;
+}
+
+.submit:active {
+  color: white;
+  background-color: #4203ff;
+}
+
+.reset {
+  font-weight: 700;
+  color: #5060C0;
+
+  padding: 10px 30px;
+  border: 2px solid #5060C0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.reset:hover {
+  color: white;
+  background-color: #5060C0;
+}
+
+.reset:active {
+  color: white;
+  background-color: #4203ff;
+}

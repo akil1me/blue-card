@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" href="img/blue-card-title.png">
+  <title>Blue-card</title>
+</head>
+
+<body>
+  <h1 class="visually-hidden">Blue card form site</h1>
+  <div class="container">
+    <div class="bg-img">
+
+    </div>
+    <div class="form">
+      <div class="title-site">
+        <h2 class="blue-card-title">Лотерея <span class="blue-card-title-span">Blue Card</span> </h2>
+      </div>
+      <form class="blue-card-form" action="https://echo.htmlacademy.ru/" method="POST">
+        <fieldset class="fieldset">
+          <label class="user-label" for="user-name">Имя <span>*</span></label>
+          <input class="user-name" type="text" name="user-name" id="user-name" placeholder="Имя" autocomplete="off"
+            required>
+
+          <label class="user-label" for="user-surname">Фамилия <span>*</span></label>
+          <input class="user-name" type="text" name="user-surname" id="user-surname" placeholder="Фамилия"
+            autocomplete="off" required>
+
+          <label class="user-label" for="user-patronymic">Отчество <span>*</span></label>
+          <input class="user-name" type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество  "
+            autocomplete="off" required>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <label class="user-label" for="user-data">Дата рождения <span>*</span></label>
+          <input class="user-data" type="date" name="user-data" id="user-data" required>
+
+        </fieldset>
+        <fieldset class="fieldset">
+          <label class="user-label" for="user-tel">Телефон <span>*</span></label>
+          <input class="user-tel" type="tel" name="user-tel" id="user-tel" placeholder="+998901234567"
+            autocomplete="off" required>
+
+        </fieldset>
+        <fieldset class="fieldset">
+          <label class="user-label" for="user-from">Гражданство <span>*</span></label>
+
+          <select class="user-from" name="user-from" id="user-from" required>
+            <option value selected hidden>Выберите государсво</option>
+            <option value="Украина">Украина</option>
+            <option value="Молдова">Молдова</option>
+            <option value="Узбекистан">Узбекистан</option>
+            <option value="Казахстан">Казахстан</option>
+            <option value="Россия" disabled>Россия</option>
+            <option value="Монголия">Монголия</option>
+            <option value="Туркменистан">Туркменистан</option>
+            <option value="Турция">Турция</option>
+            <option value="Кигизия">Кигизия</option>
+            <option value="Таджикистан">Таджикистан</option>
+            <option value="Афганистан">Афганистан</option>
+            <option value="Грузия">Грузия</option>
+            <option value="Армения">Армения</option>
+            <option value="Польша">Польша</option>
+            <option value="Сирия">Сирия</option>
+            <option value="Азербайджан">Азербайджан</option>
+            <option value="Индия">Индия</option>
+            <option value="США">США</option>
+          </select>
+
+          <label class="user-label" for="user-city">Город (Область) <span>*</span></label>
+          <input class="user-from" list="location" name="user-city" type="text" id="user-city" placeholder="Город"
+            autocomplete="off">
+          <datalist id="location">
+            <option value="Ташкент. г"></option>
+            <option value="Ташкент. о"></option>
+            <option value="Каракалпакстан"></option>
+            <option value="Андижан"></option>
+            <option value="Фергана"></option>
+            <option value="Наманган"></option>
+            <option value="Джиссах"></option>
+            <option value="Сырдарья"></option>
+            <option value="Сурхандарья"></option>
+            <option value="Кашкадарья"></option>
+            <option value="Наваи"></option>
+            <option value="Бухара"></option>
+            <option value="Хоразм"></option>
+            <option value="Самарканд"></option>
+          </datalist>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <label class="user-label" for="user-email">Электронная почта <span>*</span></label>
+          <input class="user-tel" type="email" name="user-email" id="user-email" placeholder="akipax123@gmail.com"
+            autocomplete="off" required>
+
+        </fieldset>
+        <fieldset class="fieldset">
+          <label class="user-label">Языки <span>*</span></label>
+          <label class="user-education" for="english"> <input type="checkbox" name="user-langue" id="english"
+              value="Английский">Английский
+          </label>
+          <label class="user-education" for="russian"> <input type="checkbox" name="user-langue" id="russian"
+              value="Русский">Русский
+          </label>
+          <label class="user-education" for="uzb"> <input type="checkbox" name="user-langue" id="uzb"
+              value="Узбекский">Узбекский
+          </label>
+
+        </fieldset>
+        <fieldset class="fieldset">
+          <label class="user-label">Образование <span>*</span></label>
+          <label class="user-education" for="top"> <input type="radio" name="user-education" id="top" value="Высшие"
+              required>Высшие
+
+          </label>
+          <label class="user-education" for="middle"> <input type="radio" name="user-education" id="middle"
+              value="Средние" required>Средние
+
+          </label>
+          <label class="user-education" for="last"> <input type="radio" name="user-education" id="last"
+              value="Начальное" required>Начальное
+
+          </label>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <label class="user-label">Пол <span>*</span></label>
+          <label class="user-education" for="male"> <input type="radio" name="user-gender" id="male" value="Мужское"
+              required>Мужское
+
+          </label>
+          <label class="user-education" for="felame"> <input type="radio" name="user-gender" id="felame" value="Мужское"
+              required>Жениское
+          </label>
+        </fieldset>
+        <fieldset class="fieldset">
+          <label class="user-label">Семейное положение <span>*</span></label>
+          <label class="user-education" for="family-x">
+            <input type="radio" name="user-family" id="family-x" value="Женат" required>
+            Женат</label>
+          <label class="user-education" for="family-y">
+            <input type="radio" name="user-family" id="family-y" value="Не женат" required>
+            Не женат</label>
+          <label class="user-education" for="family-z"> <input type="radio" name="user-family" id="family-z"
+              value="В разводе" required>В разводе</label>
+
+        </fieldset>
+        <fieldset class="fieldset">
+          <label class="user-label" for="user-text">О себе <span>*</span></label>
+          <textarea class="user-text" name="user-text" id="user-text" cols="30" rows="10"
+            placeholder="Текст"></textarea>
+        </fieldset>
+        <div class="buttons">
+          <button class="submit" type="submit">Отправить</button>
+          <button class="reset" type="reset">Очистить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
